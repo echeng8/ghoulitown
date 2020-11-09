@@ -92,6 +92,7 @@ public class LobbyScript : MonoBehaviourPunCallbacks
 
         // #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
         PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = MAX_PLAYERS });
+        
     }
 
     // callback if successfully joined a room
@@ -99,6 +100,10 @@ public class LobbyScript : MonoBehaviourPunCallbacks
     {
         CanvasScript.instance.SetStatus("Joined a room!");
         CanvasScript.instance.SetMenuStage(CanvasScript.MenuStage.Room);
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
+        {
+            PhotonNetwork.LoadLevel("Game");
+        }
     }
 
     // callback if failed to join a room by name

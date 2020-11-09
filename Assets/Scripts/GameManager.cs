@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Unity.Mathematics;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
@@ -14,11 +16,8 @@ public class GameManager : MonoBehaviourPunCallbacks
         instance = this;
     }
 
-    public override void OnJoinedRoom()
+    private void Start()
     {
-        if (PlayerController.instance == null)
-        {
-            PhotonNetwork.Instantiate(playerPrefab.name, Vector3.zero, Quaternion.identity);
-        }
+        PhotonNetwork.Instantiate(playerPrefab.name, Vector3.zero + Vector3.up * 4, Quaternion.identity);
     }
 }
