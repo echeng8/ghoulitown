@@ -39,4 +39,10 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         CanvasScript.instance.SetStatus(string.Format("Disconnected because of {0}", cause));
     }
+    
+    
+    public void SetNickname(string name)
+    {
+        PhotonNetwork.NickName = name;
+    }
 }

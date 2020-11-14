@@ -5,8 +5,4 @@ using Photon.Pun;
 
 public class MainScript : MonoBehaviour
 {
-    public void SetNickname(string name)
-    {
-        PhotonNetwork.NickName = name;
-    }
 }
