@@ -98,8 +98,6 @@ public class LobbyScript : MonoBehaviourPunCallbacks
     // callback if successfully joined a room
     public override void OnJoinedRoom()
     {
-        CanvasScript.instance.SetStatus("Joined a room!");
-        CanvasScript.instance.SetMenuStage(CanvasScript.MenuStage.Room);
         if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
         {
             PhotonNetwork.LoadLevel("Game");

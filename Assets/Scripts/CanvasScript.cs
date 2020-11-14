@@ -6,13 +6,18 @@ using UnityEngine.UI;
 public class CanvasScript : MonoBehaviour
 {
     public static CanvasScript instance;
+    
     [SerializeField]
     private Text statusText;
 
     [SerializeField]
     private GameObject[] menus;
 
-    public enum MenuStage { Main, Lobby, Room }
+    public enum MenuStage
+    {
+        Main,
+        Lobby
+    }
 
     private void Awake()
     {

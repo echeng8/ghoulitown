@@ -371,6 +371,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="archive" t="Include">
+            <e p="RoomScript.cs" t="Include" />
+          </e>
           <e p="CanvasScript.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Launcher.cs" t="Include" />
@@ -378,7 +381,7 @@
           <e p="MainScript.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="RoomListing.cs" t="Include" />
-          <e p="RoomScript.cs" t="Include" />
+          <e p="UnityEvents.cs" t="Include" />
         </e>
         <e p="unity-chan!" t="Include">
           <e p="Unity-chan! Model" t="Include">

@@ -54,6 +54,7 @@ namespace UnityChan
 		// 初期化
 		void Start ()
 		{
+			
 			// Animatorコンポーネントを取得する
 			anim = GetComponent<Animator> ();
 			// CapsuleColliderコンポーネントを取得する（カプセル型コリジョン）
@@ -70,7 +71,8 @@ namespace UnityChan
 		// 以下、メイン処理.リジッドボディと絡めるので、FixedUpdate内で処理を行う.
 		void FixedUpdate ()
 		{
-			if (!photonView.IsMine && PhotonNetwork.IsConnected)
+			//photon check added by frolecks
+			if (photonView && !photonView.IsMine && PhotonNetwork.IsConnected)
 				return;
 			
 			float h = Input.GetAxis ("Horizontal");				// 入力デバイスの水平軸をhで定義
