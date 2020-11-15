@@ -375,10 +375,13 @@
             <e p="RoomScript.cs" t="Include" />
           </e>
           <e p="CanvasScript.cs" t="Include" />
-          <e p="GameManager.cs" t="Include" />
           <e p="Launcher.cs" t="Include" />
           <e p="LoadManager.cs" t="Include" />
           <e p="LobbyScript.cs" t="Include" />
+          <e p="Manager" t="Include">
+            <e p="ApplicationManager.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+          </e>
           <e p="PlayerController.cs" t="Include" />
           <e p="RoomListing.cs" t="Include" />
           <e p="UnityEvents.cs" t="Include" />

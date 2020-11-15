@@ -27,16 +27,19 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
         if (OnLocalPlayerInstanceSet == null)
             OnLocalPlayerInstanceSet = new GameObjectEvent();
         
-        //this is the dummy player to preload static fields, so disable
-        if (photonView.Owner == null) 
-        {
-            gameObject.SetActive(false);
-            return;
-        }
 
-        if (photonView.IsMine)
+
+        //checks PNconnected to allow offline testing
+        if (!PhotonNetwork.IsConnected || photonView.IsMine)
         {
             SetLocalInstancePlayer(this);
+        } else if (photonView.Owner == null)
+        {
+            //this is the dummy player to preload static fields, so disable
+            if (photonView.Owner == null) 
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 
