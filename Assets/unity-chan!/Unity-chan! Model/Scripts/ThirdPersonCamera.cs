@@ -39,6 +39,7 @@ namespace UnityChan
 		/// </summary>
 		void TrackPlayer (GameObject obj)
 		{
+
 			standardPos = obj.transform.Find("CamPos").transform;
 			frontPos =  obj.transform.Find ("FrontPos").transform;
 			jumpPos = obj.transform.Find ("JumpPos").transform;
@@ -52,6 +53,9 @@ namespace UnityChan
 	
 		void FixedUpdate ()	// このカメラ切り替えはFixedUpdate()内でないと正常に動かない
 		{
+			if (!trackedPlayer)
+				return;
+			
 			if (Input.GetButton ("Fire1")) {	// left Ctlr	
 				// Change Front Camera
 				SetCameraPositionFrontView ();

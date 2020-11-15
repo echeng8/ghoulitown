@@ -22,17 +22,11 @@
     <list default="true" id="ccdcf57a-9b8c-418d-9d8f-819e57e975b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ghoulitown/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ghoulitown/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ghoulitown/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ghoulitown/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/UnityChan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UnityChan.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CanvasScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CanvasScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LobbyScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LobbyScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainScript.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoomScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoomScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scenes/Locomotion.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scenes/Locomotion.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/UnityChanControlScriptWithRgidBody.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/UnityChanControlScriptWithRgidBody.cs" afterDir="false" />
     </list>
@@ -46,19 +40,22 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityEvents.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" />
-        <option value="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/UnityChanControlScriptWithRgidBody.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CanvasScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LobbyScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoadManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/UnityChanControlScriptWithRgidBody.cs" />
       </list>
     </option>
   </component>
@@ -117,7 +114,8 @@
       <option name="presentableId" value="Default" />
       <updated>1604889917774</updated>
       <workItem from="1604889993008" duration="7068000" />
-      <workItem from="1605309081760" duration="7514000" />
+      <workItem from="1605309081760" duration="10140000" />
+      <workItem from="1605396294303" duration="1897000" />
     </task>
     <servers />
   </component>
@@ -136,6 +134,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

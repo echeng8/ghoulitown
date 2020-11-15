@@ -377,8 +377,8 @@
           <e p="CanvasScript.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Launcher.cs" t="Include" />
+          <e p="LoadManager.cs" t="Include" />
           <e p="LobbyScript.cs" t="Include" />
-          <e p="MainScript.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="RoomListing.cs" t="Include" />
           <e p="UnityEvents.cs" t="Include" />

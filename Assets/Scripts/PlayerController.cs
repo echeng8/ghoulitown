@@ -19,17 +19,24 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
 
 
     bool _isFiring;
-    
+
 
     private void Awake()
     {
+        //initializes events for subscribers
         if (OnLocalPlayerInstanceSet == null)
             OnLocalPlayerInstanceSet = new GameObjectEvent();
         
+        //this is the dummy player to preload static fields, so disable
+        if (photonView.Owner == null) 
+        {
+            gameObject.SetActive(false);
+            return;
+        }
+
         if (photonView.IsMine)
         {
-            localPlayerInstance = this;
-            OnLocalPlayerInstanceSet.Invoke(localPlayerInstance.gameObject);
+            SetLocalInstancePlayer(this);
         }
     }
 
@@ -53,5 +60,11 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
             this._isFiring = (bool)stream.ReceiveNext();
             Debug.Log(_isFiring);
         }
+    }
+
+    void SetLocalInstancePlayer(PlayerController pc)
+    {
+        localPlayerInstance = this;
+        OnLocalPlayerInstanceSet.Invoke(localPlayerInstance.gameObject);
     }
 }

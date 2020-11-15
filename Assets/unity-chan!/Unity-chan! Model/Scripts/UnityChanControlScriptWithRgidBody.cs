@@ -128,7 +128,7 @@ namespace UnityChan
 		// JUMP中の処理
 		// 現在のベースレイヤーがjumpStateの時
 		else if (currentBaseState.nameHash == jumpState) {
-				cameraObject.SendMessage ("setCameraPositionJumpView");	// ジャンプ中のカメラに変更
+				cameraObject.SendMessage ("SetCameraPositionJumpView");	// ジャンプ中のカメラに変更
 				// ステートがトランジション中でない場合
 				if (!anim.IsInTransition (0)) {
 				
@@ -176,7 +176,7 @@ namespace UnityChan
 		// REST中の処理
 		// 現在のベースレイヤーがrestStateの時
 		else if (currentBaseState.nameHash == restState) {
-				//cameraObject.SendMessage("setCameraPositionFrontView");		// カメラを正面に切り替える
+				//cameraObject.SendMessage("SetCameraPositionFrontView");		// カメラを正面に切り替える
 				// ステートが遷移中でない場合、Rest bool値をリセットする（ループしないようにする）
 				if (!anim.IsInTransition (0)) {
 					anim.SetBool ("Rest", false);
