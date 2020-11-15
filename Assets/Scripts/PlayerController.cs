@@ -45,8 +45,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
 
     private void Start()
     {
-        //todo bring this to nametag components for single responsibility
-        nameTag.GetComponent<TextMesh>().text = photonView.Owner.NickName;
+        if(PhotonNetwork.IsConnected)
+            nameTag.GetComponent<TextMesh>().text = photonView.Owner.NickName;
 
     }
     
