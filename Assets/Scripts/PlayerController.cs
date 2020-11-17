@@ -6,20 +6,18 @@ using UnityEngine.Events;
 using Photon.Pun;
 
 
-
+//todo state machine
 public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
 {
-    public static PlayerController localPlayerInstance;
+    public static PlayerController LocalPlayerInstance;
     public static GameObjectEvent OnLocalPlayerInstanceSet;
 
     
     [SerializeField]
     private GameObject nameTag;
 
-
-
-    bool _isFiring;
-
+    
+    #region Monobehavior Callback
 
     private void Awake()
     {
@@ -45,29 +43,54 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
 
     private void Start()
     {
+        //todo move logic to nametag scripts
         if(PhotonNetwork.IsConnected)
             nameTag.GetComponent<TextMesh>().text = photonView.Owner.NickName;
-
     }
     
+    #endregion
+
+    #region PhotonCallbacks
+
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        // push data to other clients
-        if (stream.IsWriting)
-        {
-            stream.SendNext(_isFiring);
-        }
-        // interpret data
-        else
-        {
-            this._isFiring = (bool)stream.ReceiveNext();
-            Debug.Log(_isFiring);
-        }
+        return;
     }
+
+    #endregion
+
+    #region Public Methods
+    
+    
+    #endregion
+
+    #region  Pun RPC and Public RPC-Calling Methods
+    
+    /// <summary>
+    /// handles being attacked. this is called from the attackers client locally.
+    /// </summary>
+    /// <param name="attackerActorNumber">you know what it is</param>
+    public void RPCAttacked(int attackerActorNumber)
+    {
+        photonView.RPC("GetAttacked", RpcTarget.All, attackerActorNumber);
+    }
+    
+    [PunRPC]
+    void GetAttacked(int attackerActorNumber)
+    {
+        print($"{photonView.Owner.ActorNumber} was attacked by {attackerActorNumber}");
+    }
+    
+    #endregion
+    
+    #region Private Methods
 
     void SetLocalInstancePlayer(PlayerController pc)
     {
-        localPlayerInstance = this;
-        OnLocalPlayerInstanceSet.Invoke(localPlayerInstance.gameObject);
+        LocalPlayerInstance = this;
+        OnLocalPlayerInstanceSet.Invoke(LocalPlayerInstance.gameObject);
     }
+
+    #endregion
+
 }

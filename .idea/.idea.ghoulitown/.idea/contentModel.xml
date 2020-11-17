@@ -375,6 +375,8 @@
             <e p="RoomScript.cs" t="Include" />
           </e>
           <e p="CanvasScript.cs" t="Include" />
+          <e p="ImposterController.cs" t="Include" />
+          <e p="ImposterUI.cs" t="Include" />
           <e p="Launcher.cs" t="Include" />
           <e p="LoadManager.cs" t="Include" />
           <e p="LobbyScript.cs" t="Include" />

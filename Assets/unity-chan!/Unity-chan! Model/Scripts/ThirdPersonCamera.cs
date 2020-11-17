@@ -28,8 +28,8 @@ namespace UnityChan
 
 		private void Start()
 		{
-			if (PlayerController.localPlayerInstance)
-				TrackPlayer(PlayerController.localPlayerInstance.gameObject);
+			if (PlayerController.LocalPlayerInstance)
+				TrackPlayer(PlayerController.LocalPlayerInstance.gameObject);
 			else 
 				PlayerController.OnLocalPlayerInstanceSet.AddListener(TrackPlayer);
 		}
