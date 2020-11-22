@@ -34,7 +34,7 @@ namespace Manager
 
         public override void OnRoomPropertiesUpdate(Hashtable propertiesThatChanged)
         {
-            print(propertiesThatChanged);
+            return;
         }
 
         #endregion

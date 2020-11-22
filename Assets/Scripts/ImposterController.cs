@@ -12,7 +12,8 @@ public class ImposterController : MonoBehaviourPunCallbacks
     /// range of KillNearbyPlayer()
     /// </summary>
     [SerializeField] private float killRange; 
-    public BoolEvent OnImposterStatusChange;
+
+    public BoolEvent OnImposterStatusChange = new BoolEvent();
     
     
     public bool Imposter
@@ -54,20 +55,20 @@ public class ImposterController : MonoBehaviourPunCallbacks
         
         Collider[] hitColliders = new Collider[16];
         
+        print("try attacked");
         var numColliders = Physics.OverlapSphereNonAlloc(transform.position, killRange, hitColliders);
         for (int i = 0; i < numColliders; i++)
         {
-            if (hitColliders[i].CompareTag("Player"))
+            if (hitColliders[i].CompareTag("Player")) 
             {
-                print("I tried to kill someone.");
-                hitColliders[i].gameObject.GetComponent<PlayerController>().RPCAttacked(PhotonNetwork.LocalPlayer.ActorNumber);
+                PlayerController playerC =  hitColliders[i].gameObject.GetComponent<PlayerController>();
+                if (playerC.gameObject != this.gameObject)
+                {
+                    print("I attacked ");
+                    playerC.GetAttacked(PhotonNetwork.LocalPlayer.ActorNumber);
+                }
             }
         }
-
-
     }
-
-
-
 
 }

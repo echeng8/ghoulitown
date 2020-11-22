@@ -31,7 +31,7 @@ public class CanvasScript : MonoBehaviour
 
     public void SetStatus(string text)
     {
-        Debug.Log("Status Update: " + text);
+        //Debug.Log("Status Update: " + text);
         statusText.text = text;
     }
 

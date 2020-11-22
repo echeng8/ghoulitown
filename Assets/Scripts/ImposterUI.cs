@@ -1,23 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-
+/// <summary>
+/// Presents imposter action buttons when a player is an imposter
+/// connects imposter action buttons to the imposter 
+/// </summary>
 public class ImposterUI : MonoBehaviour
 {
+    public Button attackButton;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (PlayerController.LocalPlayerInstance)
+            ConnectToPlayer(PlayerController.LocalPlayerInstance.gameObject);
+        else 
+            PlayerController.OnLocalPlayerInstanceSet.AddListener(ConnectToPlayer);
     }
 
-    void addListenersToPlayer(GameObject player)
+    void ConnectToPlayer(GameObject player)
     {
-        //todo
-        return;
+        ImposterController imposterController = player.GetComponent<ImposterController>();
+        imposterController.OnImposterStatusChange.AddListener(ToggleImposterUI);
+        
+        attackButton.onClick.AddListener(imposterController.AttackNearbyPlayer);
+        Debug.Break();
+        gameObject.SetActive(false);
     }
 
-    void toggleImposterUI(bool isImposter)
+    void ToggleImposterUI(bool isImposter)
     {
         gameObject.SetActive(isImposter);
     }

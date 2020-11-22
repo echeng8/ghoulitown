@@ -29,9 +29,14 @@ namespace UnityChan
 		private void Start()
 		{
 			if (PlayerController.LocalPlayerInstance)
+			{
 				TrackPlayer(PlayerController.LocalPlayerInstance.gameObject);
-			else 
+			}
+			else
+			{
 				PlayerController.OnLocalPlayerInstanceSet.AddListener(TrackPlayer);
+			}
+				
 		}
 
 		/// <summary>
@@ -39,7 +44,6 @@ namespace UnityChan
 		/// </summary>
 		void TrackPlayer (GameObject obj)
 		{
-
 			standardPos = obj.transform.Find("CamPos").transform;
 			frontPos =  obj.transform.Find ("FrontPos").transform;
 			jumpPos = obj.transform.Find ("JumpPos").transform;

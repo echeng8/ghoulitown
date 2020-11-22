@@ -5,8 +5,9 @@ using  UnityEngine.Events;
 
 
 
+[System.Serializable]
 public class GameObjectEvent : UnityEvent <GameObject> {}
 
-public class BoolEvent : UnityEvent<bool>
-{
+[System.Serializable]
+public class BoolEvent : UnityEvent<bool> {
 }

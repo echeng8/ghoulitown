@@ -24,28 +24,27 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
         //initializes events for subscribers
         if (OnLocalPlayerInstanceSet == null)
             OnLocalPlayerInstanceSet = new GameObjectEvent();
-        
-
 
         //checks PNconnected to allow offline testing
-        if (!PhotonNetwork.IsConnected || photonView.IsMine)
+        if (!PhotonNetwork.IsConnected || photonView.AmOwner)
         {
             SetLocalInstancePlayer(this);
         } else if (photonView.Owner == null)
         {
-            //this is the dummy player to preload static fields, so disable
-            if (photonView.Owner == null) 
-            {
-                gameObject.SetActive(false);
-            }
+            //this is the dummy player used to initalize static events. disable after initalizing.
+            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
     private void Start()
     {
         //todo move logic to nametag scripts
-        if(PhotonNetwork.IsConnected)
+        if (PhotonNetwork.IsConnected)
+        {
             nameTag.GetComponent<TextMesh>().text = photonView.Owner.NickName;
+        }
+
     }
     
     #endregion
@@ -70,15 +69,19 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
     /// handles being attacked. this is called from the attackers client locally.
     /// </summary>
     /// <param name="attackerActorNumber">you know what it is</param>
-    public void RPCAttacked(int attackerActorNumber)
+    public void GetAttacked(int attackerActorNumber)
     {
-        photonView.RPC("GetAttacked", RpcTarget.All, attackerActorNumber);
+        photonView.RPC("RPC_GetAttacked", RpcTarget.All, attackerActorNumber);
     }
     
     [PunRPC]
-    void GetAttacked(int attackerActorNumber)
+    void RPC_GetAttacked(int attackerActorNumber)
     {
         print($"{photonView.Owner.ActorNumber} was attacked by {attackerActorNumber}");
+        if (photonView.IsMine)
+        {
+            transform.position = Vector3.zero + Vector3.up * 5; 
+        }
     }
     
     #endregion

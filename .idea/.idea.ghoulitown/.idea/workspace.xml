@@ -20,11 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccdcf57a-9b8c-418d-9d8f-819e57e975b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ghoulitown/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ghoulitown/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ghoulitown/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ghoulitown/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameUI.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameUI.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/KillNearbyPersonButton.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/KillNearbyPersonButton.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RoomListing.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RoomListing.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/UnityChan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UnityChan.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CanvasScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CanvasScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ImposterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ImposterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ImposterUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ImposterUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityEvents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" afterDir="false" />
@@ -38,30 +48,42 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ImposterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ImposterUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityEvents.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/CanvasScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LobbyScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" />
-        <option value="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadManager.cs" />
         <option value="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/UnityChanControlScriptWithRgidBody.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/ApplicationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CanvasScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ImposterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ImposterUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ImposterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -72,6 +94,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34991798" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.300164" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -83,7 +107,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../vampiregamebuilds\Vampire.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -124,6 +148,8 @@
       <workItem from="1605396294303" duration="11138000" />
       <workItem from="1605486050543" duration="11290000" />
       <workItem from="1605573616965" duration="6284000" />
+      <workItem from="1605743586563" duration="8888000" />
+      <workItem from="1606000446712" duration="8460000" />
     </task>
     <servers />
   </component>
@@ -148,6 +174,70 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1860" height="217" key="GridCell.Tab.0.bottom" timestamp="1606003905165">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="217" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003905165" />
+    <state width="1860" height="217" key="GridCell.Tab.0.center" timestamp="1606003905165">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="217" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003905165" />
+    <state width="1860" height="217" key="GridCell.Tab.0.left" timestamp="1606003905164">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="217" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003905164" />
+    <state width="1860" height="217" key="GridCell.Tab.0.right" timestamp="1606003905165">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="217" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003905165" />
+    <state width="1860" height="190" key="GridCell.Tab.1.bottom" timestamp="1606003904766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904766" />
+    <state width="1860" height="190" key="GridCell.Tab.1.center" timestamp="1606003904766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904766" />
+    <state width="1860" height="190" key="GridCell.Tab.1.left" timestamp="1606003904765">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904765" />
+    <state width="1860" height="190" key="GridCell.Tab.1.right" timestamp="1606003904766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904766" />
+    <state width="1860" height="190" key="GridCell.Tab.2.bottom" timestamp="1606003904767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.2.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904767" />
+    <state width="1860" height="190" key="GridCell.Tab.2.center" timestamp="1606003904767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.2.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904767" />
+    <state width="1860" height="190" key="GridCell.Tab.2.left" timestamp="1606003904766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.2.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904766" />
+    <state width="1860" height="190" key="GridCell.Tab.2.right" timestamp="1606003904767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.2.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904767" />
+    <state width="1860" height="190" key="GridCell.Tab.3.bottom" timestamp="1606003904768">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.3.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904768" />
+    <state width="1860" height="190" key="GridCell.Tab.3.center" timestamp="1606003904767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.3.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904767" />
+    <state width="1860" height="190" key="GridCell.Tab.3.left" timestamp="1606003904767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.3.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904767" />
+    <state width="1860" height="190" key="GridCell.Tab.3.right" timestamp="1606003904767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="190" key="GridCell.Tab.3.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606003904767" />
     <state x="-84" y="311" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1605318069427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -156,9 +246,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="119" width="815" height="801" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605487992373" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605574321358">
+    <state x="616" y="242" key="run.anything.popup" timestamp="1606007531104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605574321358" />
+    <state x="616" y="242" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606007531104" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605744964141">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605744964141" />
   </component>
 </project>

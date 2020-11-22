@@ -6902,6 +6902,7 @@ GameObject:
   - component: {fileID: 992224577}
   - component: {fileID: 992224578}
   - component: {fileID: 2049270016388846924}
+  - component: {fileID: 1676500207}
   m_Layer: 0
   m_Name: UnityChan
   m_TagString: Player
@@ -7260,6 +7261,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameTag: {fileID: 1776154517652332332}
+--- !u!114 &1676500207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913945301266956581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 589a16fc919e0034bbbed07a0b5b7dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killRange: 2
+  OnImposterStatusChange:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5913945301266956583
 GameObject:
   m_ObjectHideFlags: 0
@@ -8687,15 +8704,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4797fd406f54b544b6fa744f699acde, type: 3}
---- !u!4 &1717213551189154033 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3730136523080201749, guid: a4797fd406f54b544b6fa744f699acde,
-    type: 3}
-  m_PrefabInstance: {fileID: 2598823035078848228}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1776154517652332332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4374953298418299336, guid: a4797fd406f54b544b6fa744f699acde,
+    type: 3}
+  m_PrefabInstance: {fileID: 2598823035078848228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1717213551189154033 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3730136523080201749, guid: a4797fd406f54b544b6fa744f699acde,
     type: 3}
   m_PrefabInstance: {fileID: 2598823035078848228}
   m_PrefabAsset: {fileID: 0}
