@@ -26,7 +26,6 @@ public class ImposterUI : MonoBehaviour
         imposterController.OnImposterStatusChange.AddListener(ToggleImposterUI);
         
         attackButton.onClick.AddListener(imposterController.AttackNearbyPlayer);
-        Debug.Break();
         gameObject.SetActive(false);
     }
 
