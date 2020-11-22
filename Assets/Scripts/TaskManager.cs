@@ -17,11 +17,26 @@ public class TaskManager : MonoBehaviour
             o.gameObject.GetComponent<TaskScript>().setId(i);
             i += 1;
         }
+        foreach (GameObject o in GameObject.FindGameObjectsWithTag("GroupTask")) //Loop just sets an id for each task automatically and tracks their name and if they're done or not
+        {
+            taskComplete.Add(false);
+            taskName.Add(o.gameObject.GetComponent<GroupTaskMaster>().taskName);
+            o.gameObject.GetComponent<GroupTaskMaster>().setId(i);
+            i += 1;
+        }
     }
 
     public void taskUpdate(int id) //Updates tasks complete
     {
         taskComplete[id] = true;
+    }
+
+    void OnApplicationQuit()
+    {
+        for(int x = 0; x < taskComplete.Count; x+=1)
+        {
+            Debug.Log("Task: " + taskName[x] + "\nComplete: " + taskComplete[x]);
+        }
     }
 
 
